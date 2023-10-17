@@ -1,8 +1,8 @@
 function clock(){
-let endDate="01 january 2024 23:59"
+let endDate="31 december 2023 23:59:59"
 let end=new Date(endDate)
 let now=new Date()
-let inputs=document.querySelectorAll("input")
+let inputs=document.getElementsByTagName("input")
 let diff=(end-now)/1000
 console.log(diff)
 inputs[0].value=Math.floor(diff/3600/24);
@@ -11,11 +11,8 @@ inputs[2].value=Math.floor(diff/60)%60;
 // inputs[3].value=Math.floor(diff%60);4
 
 inputs[3].value=Math.floor(diff%60/2);
-if (inputs[3].value==0){
-    console.log("time over")
+
 }
-}
-setInterval(
-    ()=>clock(),1000);
+setInterval(clock,1000);
 
 

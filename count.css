@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .main{
@@ -13,9 +14,10 @@
 }
 .title{
     margin-top: 20px;
-    color: blue;
+    color: coral;
     text-align: center;
     font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
 .col{
